@@ -1,0 +1,164 @@
+
+/* my font */
+.inter-normal {
+    font-family: "Inter", sans-serif;
+}
+.playwrite-be-vlg-normal {
+    font-family: "Playwrite BE VLG", cursive;
+
+}
+/* my shared style  */
+.btn-primary {
+    background-color: rgb(230, 83, 60);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    border-radius: 42px;
+    padding: 16px 40px 16px 40px;
+    margin-right: 10px;
+    /* margin-bottom: 92px; */
+
+}
+.my-color {
+
+}
+.bg-color {
+    background-color: black;
+}
+.text-center {
+
+}
+.go-down {
+
+}
+.go-up {
+}
+.display-flex {
+    display: flex;
+}
+.section-title {
+
+}
+.section-discription {
+
+}
+
+.column {
+    flex-direction: column;
+}
+.bg-size {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* nav style */
+
+.nav-item{
+    list-style: none;
+    margin-right: 2.9rem;
+}
+.nav-links{
+    text-decoration: none;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 120%;
+}
+    .navbar {
+        justify-content: space-between;
+        align-items: center;
+}
+.brand {
+    color: rgb(230, 83, 60);
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 120%;
+}
+/* .navbar, .banner {
+    max-width: 1440px;
+    margin: 0 auto;
+} */
+
+/* banner style */
+
+.banner {
+    display: flex;
+    margin: 0 190px 0 215px;
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+}
+.banner-content {
+    max-width:  30rem;
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column;
+    margin-left: 0px;
+    /* margin-left: 90px; */
+}
+.banner-title {
+    color: rgb(255, 255, 255);
+    font-size: 78px;
+    font-weight: 800;
+    line-height: 120%;
+}
+
+.btn-normal {
+    color: rgb(255, 255, 255);
+    background-color: black;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    border-radius: 42px;
+    padding: 16px 40px 16px 40px;
+    border: 1px solid white;
+    /* margin-bottom: 92px; */
+}
+.banner-img {
+    width: 100%;
+}
+/* .banner-img-content {
+    margin-right:200px;
+} */
+
+.banner-discription {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+.home-edit {
+    background: rgb(230, 83, 60);
+    border-radius: 40px;
+    padding: 8px 20px 8px 20px;
+    
+}
+
+/* responsive style */
+
+@media screen and (max-width:576px) {
+    .navbar, 
+    .nav-links, 
+    .banner{
+        flex-direction: column;
+    }
+    .banner{
+        margin :20px;
+    }
+    /* .btn-primary{
+        margin-bottom: 10px ;
+    } */
+    /* .banner-img {
+        width: 100%;
+    } */
+    .nav-item {
+        margin-bottom: 8px;
+    }
+
+    .banner-title {
+        font-size: 36px;
+    }
+    /* .banner {
+        margin-left:0px;
+    } */
+}
