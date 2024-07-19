@@ -27,7 +27,7 @@
     background-color: black;
 }
 .text-center {
-
+    text-align: center;
 }
 .go-down {
 
@@ -38,10 +38,18 @@
     display: flex;
 }
 .section-title {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 120%;
 
 }
-.section-discription {
-
+.section-description {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
 }
 
 .column {
@@ -119,7 +127,7 @@
     margin-right:200px;
 } */
 
-.banner-discription {
+.banner-description {
     color: rgba(255, 255, 255, 0.5);
     font-size: 16px;
     font-weight: 400;
@@ -134,7 +142,37 @@
     
 }
 
-/* responsive style */
+/* habits style */
+.habits-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+.habit-bar {
+    margin-bottom: 10px;
+}
+
+.habit-title {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+}
+.habit-description {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+    margin-top: 20px;
+}
+
+.habit-img {
+    border-radius: 90px;
+}
+
+
+/* responsive for small device*/
 
 @media screen and (max-width:576px) {
     .navbar, 
@@ -145,9 +183,9 @@
     .banner{
         margin :20px;
     }
-    /* .btn-primary{
-        margin-bottom: 10px ;
-    } */
+    .btn-primary{
+        padding: 10px 20px 10px 20px;
+    }
     /* .banner-img {
         width: 100%;
     } */
@@ -157,8 +195,46 @@
 
     .banner-title {
         font-size: 36px;
+        margin-bottom: 5px;
+    }
+    .banner-description {
+        font-size: 15px;
+        margin-bottom: 5px;
     }
     /* .banner {
         margin-left:0px;
     } */
+
+    .habits-content {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 20px;
+    }
+}
+
+/*  responsive for medium device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .banner {
+        flex-direction: column;
+    }
+
+    .btn-primary{
+        padding: 10px 20px 10px 20px;
+        
+    }
+    .banner-title {
+        font-size: 45px;
+        margin-bottom: 5px;
+    }
+    .banner-content {
+        margin-bottom: 10px;
+    }
+    .habits-content {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 20px;
+    }
+}
+/* responsive for large device */
+
+@media screen and (min-width:992px) and (max-width:1440px) {
+    
 }
