@@ -20,20 +20,18 @@
     /* margin-bottom: 92px; */
 
 }
-.my-color {
-
-}
+/* .my-color {
+} */
 .bg-color {
     background-color: black;
 }
 .text-center {
     text-align: center;
 }
-.go-down {
-
+/* .go-down {
 }
 .go-up {
-}
+} */
 .display-flex {
     display: flex;
 }
@@ -171,20 +169,49 @@
     border-radius: 90px;
 }
 
+/* run style */
+
+.run-content {
+    /* width: 1260px; */
+    height: 350px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+.run-img {
+    width: 100%;
+    height: 312px;
+    border-radius: 20px;
+    margin: 20px 60px 0px 0px ;
+    margin-left: -50px;
+}
+.run-one {
+    margin-left: 50px;
+    max-width:450px ;
+}
+
+
 
 /* responsive for small device*/
 
 @media screen and (max-width:576px) {
     .navbar, 
     .nav-links, 
-    .banner{
+    .banner,
+    .run-content {
         flex-direction: column;
     }
     .banner{
-        margin :20px;
+        margin :10px;
     }
     .btn-primary{
-        padding: 10px 20px 10px 20px;
+        padding: 10px 80px 10px 80px;
+    }
+    .btn-normal {
+        padding: 10px 80px 10px 80px;
+        margin-top: 5px;
     }
     /* .banner-img {
         width: 100%;
@@ -192,7 +219,6 @@
     .nav-item {
         margin-bottom: 8px;
     }
-
     .banner-title {
         font-size: 36px;
         margin-bottom: 5px;
@@ -209,6 +235,21 @@
         grid-template-columns: repeat(1, 1fr);
         margin-bottom: 20px;
     }
+    .run-img {
+        margin-left: 0px;
+        margin-top: 60px;
+    }
+    .section-title {
+        font-size:2rem ;
+    }
+    .section-description {
+        font-size: 1rem;
+    }
+    .run-content {
+        margin-left: 10px;
+    }
+
+    
 }
 
 /*  responsive for medium device */
@@ -216,21 +257,25 @@
     .banner {
         flex-direction: column;
     }
-
     .btn-primary{
-        padding: 10px 20px 10px 20px;
-        
+        padding: 10px 60px 10px 60px;
     }
-    .banner-title {
+    .btn-normal {
+        padding: 10px 60px 10px 60px;
+    }
+    /* .banner-title {
         font-size: 45px;
         margin-bottom: 5px;
-    }
+    } */
     .banner-content {
         margin-bottom: 10px;
     }
     .habits-content {
         grid-template-columns: repeat(2, 1fr);
         margin-bottom: 20px;
+    }
+    .section-title {
+        font-size: 2rem;
     }
 }
 /* responsive for large device */
