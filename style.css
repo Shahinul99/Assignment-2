@@ -144,6 +144,47 @@ main section {
     
 }
 
+/* .btn-normal-one {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 90px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    padding: 45px 40px;
+    color: white;
+}
+#badge {
+    padding: 45px 45px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#experiience {
+    font-size: 4rem;
+    font-weight: 700;
+
+} */
+/* .pic-pic {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 90px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+}
+.pic-pic-two {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 90px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+}
+.pic-title {
+    font-size: 30px;
+    color: #ffff;
+}
+.pic-description {
+    font-size: 30px;
+    color: #ffff;
+} */
 /* habits style */
 .habits-content {
     display: grid;
@@ -181,7 +222,7 @@ main section {
     border-radius: 18px;
     background: rgb(34, 34, 34);
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 
 }
 .run-img {
@@ -189,7 +230,7 @@ main section {
     height: 312px;
     border-radius: 20px;
     margin: 20px 60px 0px 0px ;
-    margin-left: -50px;
+    /* margin-left: -50px; */
 }
 .run-one {
     margin-left: 50px;
@@ -227,15 +268,31 @@ main section {
     width: 100%;
     padding: 10px;
     text-align: center;
+    position: relative;
 
- }
- 
- /* .new-title {
+}
+.tt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    transform: translate(-50%,-50%);
+}
+.ttt {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+
+}
+
+/* .new-title {
     margin: 0;
     font-size: 1.5em;
     color: white;
- }
- .new-description {
+}
+.new-description {
     color: rgba(255, 255, 255, 0.5);
     font-size: 1em;
     font-weight: 500;
@@ -243,13 +300,98 @@ main section {
 
 
 
+/* footer style */
+
+
+
+/* .footer-top {
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 40px;
+    width: 1440px;
+    height: 500px;
+    justify-content: space-between;
+} */
+
+footer {
+    background-color: #1c1c1c;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-top {
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.brand-section {
+    min-width: 300px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.brand {
+    font-size: 2em;
+    color: #f44336;
+}
+
+.links-section {
+    justify-content: space-between;
+    min-width: 400px;
+}
+
+.links-column {
+    margin: 0 20px;
+
+}
+
+.links-column h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.links-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links-column ul li {
+    margin: 5px 0;
+}
+
+.links-column ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.footer-bottom {
+    border-top: 4px solid #333;
+    padding-top: 20px;
+    font-size: 0.8em;
+}
+.footer-des {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
 /* responsive for small device*/
 
 @media screen and (max-width:576px) {
     .navbar, 
     .nav-links, 
     .banner,
-    .run-content {
+    .run-content,
+    .footer-top,
+    .links-section {
         flex-direction: column;
     }
     .banner{
@@ -304,7 +446,8 @@ main section {
 
 /*  responsive for medium device */
 @media screen and (min-width:576px) and (max-width:992px) {
-    .banner {
+    .banner, 
+    .footer-top{
         flex-direction: column;
     }
     .btn-primary{
